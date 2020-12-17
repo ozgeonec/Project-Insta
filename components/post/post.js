@@ -13,11 +13,14 @@ function Post({ children, className,src, flat=true,name,asrc, ...props }) {
 
     return (
         <div className={styles.post}{...props}>
-         <Profile name={name} src={asrc}/>
-         <TextMain>{children}</TextMain>
-         {flat && <Images className={styles.img} src={src}/>}
-         <ActionBox blue={true}/>
-         <IconBox />
+            <div className={styles.cont}>
+                <Profile name={name} src={asrc}/>
+                <TextMain>{children}</TextMain>
+                {flat && <Images className={styles.img} src={src}/>}
+                <ActionBox blue={true}/>
+                <IconBox />
+            </div>
+
     </div>
     )
 }

@@ -6,11 +6,10 @@
 .img{
     width:100%;
     height: auto;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 390px;
+    max-height: 390px;
     display: block;
     object-fit: cover;
-
 }
 
 
