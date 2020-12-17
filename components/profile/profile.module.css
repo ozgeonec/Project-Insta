@@ -1,0 +1,12 @@
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px 5px 5px;
+    align-items: center;
+}
+.body{
+    display: block;
+}
+.icon{
+    margin-left: auto;
+}

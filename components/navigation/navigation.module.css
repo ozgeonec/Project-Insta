@@ -1,0 +1,10 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: 20%;
+    border-bottom: 1px solid var(--c-border-color);
+}
