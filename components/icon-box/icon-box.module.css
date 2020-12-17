@@ -1,6 +1,14 @@
 .icons{
     display: flex;
     flex-direction: row;
+    column-gap: 6px;
+    font-size: 18px;
+}
+.button{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     column-gap: 6px;
+
 }

@@ -23,5 +23,8 @@
     "react-spring": "^8.0.27",
     "react-use-gesture": "^8.0.1",
     "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.5.0"
   }
 }

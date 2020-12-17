@@ -4,7 +4,12 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: transparent;
-    height: 20%;
+    background-color: var(--c-primary);
+    height: 40%;
     border-bottom: 1px solid var(--c-border-color);
+}
+.logo{
+    font-size: 14px;
+    color: deeppink;
+    font-weight: bold;
 }

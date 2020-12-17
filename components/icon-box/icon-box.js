@@ -1,17 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './icon-box.module.css'
 
 
-import {Fav60Active, Fav60B, Messageİcon, Sendms, Unlikedİcon2X, Wink60Active, Wink60B} from "../icons";
+import {
+    Fav60B,
+    Favact,
+    Messageİcon,
+    Sendms,
+    Unlikedİcon2X,
+    Wink60B,
+    Winkact
+} from "../icons";
 
-function IconBox({ className,likeCount=0, liked,winked,faved, ...props }) {
+function IconBox({ className, ...props }) {
+    const [like,setLike] = useState(false)
+    const[wink,setWink] = useState(false)
+    const[fav,setFav] = useState(false)
+    const [count,setCount]=useState(0)
+
     return (<div className={styles.icons} {...props}>
-            <p>{likeCount}</p>
-            {!liked ? <Unlikedİcon2X/> : <Sendms/> }
-            {!faved ? <Fav60B/> : <Fav60Active/>}
-            {!winked ? <Wink60B/> : <Wink60Active/>}
-            <Messageİcon/>
-        </div>
+            <p>{count}</p>
+            <div className={styles.button}>
+               {!like ? <Unlikedİcon2X onClick={()=> {
+                   setLike(!like);
+                   setCount(count + 1)
+               }}/> : <Sendms onClick={()=> {
+                   setLike(!like)
+                   setCount(count - 1)
+               }}/> }
+               {!wink ? <Wink60B onClick={()=>setWink(!wink)}/> : <Winkact onClick={()=>setWink(!wink)}/>}
+               {!fav ? <Fav60B onClick={()=>setFav(!fav)}/> : <Favact onClick={()=>setFav(!fav)}/>}
+               <Messageİcon/>
+            </div>
+            </div>
     )
 }
 export default IconBox
