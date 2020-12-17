@@ -13,6 +13,7 @@ function Layout({ ...props }) {
             <Navigation/>
             <StoryBox/>
             <Post/>
+            <Post/>
             <ShowButton/>
         </div>
     )
