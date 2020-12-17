@@ -8,15 +8,15 @@ import StoryBox from "../story-box/story-box";
 
 function Layout({ ...props }) {
 
-    return (
-        <div className={cn(styles.layout)}{...props}>
+    return (<div className={cn(styles.layout)}{...props}>
             <Navigation/>
             <StoryBox/>
             <Post/>
-            <Post/>
+            <Post children="Lorem ipsum" flat={false}/>
             <ShowButton/>
         </div>
     )
 }
+
 
 export default Layout

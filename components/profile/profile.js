@@ -6,7 +6,7 @@ import TextSmall from "../text/text-small";
 import formatDate from 'date-fns/formatDistanceToNowStrict'
 import Dots from "../icons/Dots";
 
-function Profile({ className,name="Ozge",date=Date.now(), ...props }) {
+function Profile({ className,name="Ozge",date=new Date('2020-10-22'), ...props }) {
     return (
         <div className={styles.box}{...props}>
             <Avatar/>
