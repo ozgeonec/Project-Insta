@@ -12,3 +12,9 @@
     margin-left: auto;
     cursor: pointer;
 }
+.unflat{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: center;
+}

@@ -10,7 +10,7 @@ function Story({ className, ...props }) {
     return (<div className={styles.story}{...props}>
             <div className={styles.container}>
                 <Profile/>
-                <Images/>
+                <Images src="https://inews-prd-a-images.s3.eu-west-2.amazonaws.com/content/uploads/2019/10/shutterstock_1479789158.jpg"/>
             </div>
 
         </div>

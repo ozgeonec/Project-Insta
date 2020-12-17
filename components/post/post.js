@@ -9,15 +9,15 @@ import TextMain from "../text/text-main";
 import ActionBox from "../action-box/action-box";
 
 
-function Post({ children, className,src, flat=true, ...props }) {
+function Post({ children, className,src, flat=true,name,asrc, ...props }) {
 
     return (
         <div className={styles.post}{...props}>
-         <Profile/>
+         <Profile name={name} src={asrc}/>
          <TextMain>{children}</TextMain>
          {flat && <Images className={styles.img} src={src}/>}
-         <ActionBox/>
-         <IconBox/>
+         <ActionBox blue={true}/>
+         <IconBox />
     </div>
     )
 }

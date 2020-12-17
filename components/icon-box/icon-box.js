@@ -12,7 +12,7 @@ import {
     Winkact
 } from "../icons";
 
-function IconBox({ className, ...props }) {
+function IconBox({ className,liked, ...props }) {
     const [like,setLike] = useState(false)
     const[wink,setWink] = useState(false)
     const[fav,setFav] = useState(false)
@@ -25,9 +25,11 @@ function IconBox({ className, ...props }) {
                {!like ? <Unlikedİcon2X onClick={()=> {
                    setLike(!like);
                    setCount(count + 1);
+                   liked=true;
                }}/> : <Sendms onClick={()=> {
                    setLike(!like)
                    setCount(count - 1)
+                   liked=false;
                }}/> }
                {!wink ? <Wink60B onClick={()=>setWink(!wink)}/> : <Winkact onClick={()=>setWink(!wink)}/>}
                {!fav ? <Fav60B onClick={()=>setFav(!fav)}/> : <Favact onClick={()=>setFav(!fav)}/>}

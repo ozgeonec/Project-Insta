@@ -6,15 +6,15 @@ import TextSmall from "../text/text-small";
 import formatDate from 'date-fns/formatDistanceToNowStrict'
 import Dots from "../icons/Dots";
 
-function Profile({ className,name="Ozge",date=new Date('2020-10-22'), ...props }) {
+function Profile({ className,name="Ozge",date=new Date('2020-10-22'),flat=true,src, ...props }) {
     return (
-        <div className={styles.box}{...props}>
-            <Avatar/>
+        <div className={cn(styles.box, !flat && styles.unflat)}{...props}>
+            {!flat ? <Avatar border src={src}/> : <Avatar src={src}/>}
             <div className={styles.body}>
                 <TextHeader>{name}</TextHeader>
-                <TextSmall>{formatDate(date)}</TextSmall>
+                {flat && <TextSmall>{formatDate(date)}</TextSmall>}
             </div>
-            <Dots className={styles.icon}/>
+            {flat && <Dots className={styles.icon}/>}
         </div>
     )
 }

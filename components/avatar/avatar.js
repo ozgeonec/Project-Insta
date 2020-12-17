@@ -7,11 +7,12 @@ function Avatar({ src, alt, size = 25,border=false, ...props }) {
         <button className={cn([styles.photo] , border && styles.border)} style={{ width: size, height: size }} {...props}>
             <img
                 className={styles.img}
-                src="https://pbs.twimg.com/profile_images/1317573845944029184/e_bgjyJO_400x400.jpg"
+                src={src}
                 alt={alt}
             />
         </button>
     )
 }
+
 
 export default Avatar
