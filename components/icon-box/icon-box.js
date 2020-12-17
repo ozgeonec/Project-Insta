@@ -18,12 +18,13 @@ function IconBox({ className, ...props }) {
     const[fav,setFav] = useState(false)
     const [count,setCount]=useState(0)
 
+
     return (<div className={styles.icons} {...props}>
             <p>{count}</p>
             <div className={styles.button}>
                {!like ? <Unlikedİcon2X onClick={()=> {
                    setLike(!like);
-                   setCount(count + 1)
+                   setCount(count + 1);
                }}/> : <Sendms onClick={()=> {
                    setLike(!like)
                    setCount(count - 1)

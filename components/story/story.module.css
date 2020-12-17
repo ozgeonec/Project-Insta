@@ -1,0 +1,11 @@
+.story{
+    display: flex;
+    background-color: dimgray;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container{
+    width: 400px;
+    height: auto;
+}

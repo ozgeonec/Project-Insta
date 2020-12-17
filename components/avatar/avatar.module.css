@@ -1,6 +1,7 @@
 .photo{
     flex-shrink:0;
     cursor: pointer;
+    outline: none;
 }
 
 
