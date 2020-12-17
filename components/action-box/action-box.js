@@ -1,10 +1,10 @@
 import styles from './action-box.module.css'
-import cn from 'classnames'
+//import cn from 'classnames'
 import {Likesblue, Unlikedİcon2X} from "../icons";
 import TextSmall from "../text/text-small";
 
 
-function ActionBox({ className,count,blue=false, ...props }) {
+function ActionBox({ className,count=6,blue=false, ...props }) {
     return (
         <div className={styles.box}{...props}>
             <TextSmall>{count}</TextSmall>

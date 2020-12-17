@@ -1,3 +1,4 @@
 .text{
     color: var(--c-small-text-color);
+    font-size: 10px;
 }
