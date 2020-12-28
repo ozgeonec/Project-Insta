@@ -1,15 +1,19 @@
 .button{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid var(--c-border-color);
     background-color: var(--c-primary);
     cursor: pointer;
-    justify-content: space-around;
     width: 300px;
     height: 40px;
-    padding: 10px 112px 10px 37px;
+    padding: 12px 112px 12px 112px;
     border-radius: 18px;
     margin-top: 50px;
     font-size: 14px;
+    text-align: center;
+}
+.icon{
+  margin-left: auto;
 }

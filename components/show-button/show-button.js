@@ -10,8 +10,7 @@ function ShowButton({ children, className, ...props }) {
 
     return (
         <button className={styles.button}{...props}>
-            <DownArrow/>
-            Show More
+            <DownArrow/> Show More
         </button>
     )
 }
