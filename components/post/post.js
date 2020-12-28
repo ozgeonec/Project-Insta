@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styles from './post.module.css'
-//import cn from 'classnames'
+import cn from 'classnames'
 import Profile from "../profile/profile";
 import IconBox from "../icon-box/icon-box";
 
@@ -13,13 +13,11 @@ function Post({ children, className,src, flat=true,name,asrc, ...props }) {
 
     return (
         <div className={styles.post}{...props}>
-            <div className={styles.cont}>
-                <Profile name={name} src={asrc}/>
-                <TextMain>{children}</TextMain>
-                {flat && <Images className={styles.img} src={src}/>}
-                <ActionBox blue={true}/>
-                <IconBox />
-            </div>
+             <Profile className={cn(styles.profile)} name={name} src={asrc} />
+             <TextMain>{children}</TextMain>
+             {flat && <Images className={styles.img} src={src}/>}
+             <ActionBox blue={true}/>
+             <IconBox />
 
     </div>
     )
