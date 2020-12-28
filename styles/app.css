@@ -11,7 +11,7 @@ html{
 }
 body {
     color: var(--c-text-color);
-    background-color: var(--c-background-color);
+    background-color: var(--c-primary);
     font-size: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Open Sans", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }

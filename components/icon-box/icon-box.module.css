@@ -3,6 +3,8 @@
     flex-direction: row;
     column-gap: 6px;
     font-size: 18px;
+    padding-left: 15px;
+
 }
 .button{
     cursor: pointer;

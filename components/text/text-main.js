@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './text-main.module.css'
 import cn from 'classnames'
 
-function TextMain({ children, className, ...props }) {
+function TextMain({ children,padded, className, ...props }) {
     return (
-        <span className={styles.text}{...props}>
+        <span className={cn(styles.text)}{...props}>
       {children}
     </span>
     )

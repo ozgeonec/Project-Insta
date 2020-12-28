@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styles from './post.module.css'
 import cn from 'classnames'
 import Profile from "../profile/profile";
@@ -13,13 +13,14 @@ function Post({ children, className,src, flat=true,name,asrc, ...props }) {
 
     return (
         <div className={styles.post}{...props}>
-             <Profile className={cn(styles.profile)} name={name} src={asrc} />
-             <TextMain>{children}</TextMain>
-             {flat && <Images className={styles.img} src={src}/>}
+             <Profile className={cn(styles.profile)} name={name} src={asrc}  />
+             <TextMain padded>{children}</TextMain>
+             {flat && <Images className={cn(styles.img)} src={src}/>}
+             <hr className={styles.hr}/>
              <ActionBox blue={true}/>
+             <hr className={styles.hr}/>
              <IconBox />
-
-    </div>
+        </div>
     )
 }
 export default Post
