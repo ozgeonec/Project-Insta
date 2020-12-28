@@ -9,12 +9,12 @@ import TextMain from "../text/text-main";
 import ActionBox from "../action-box/action-box";
 
 
-function Post({ children, className,src, flat=true,name,asrc, ...props }) {
+function Post({ children, className,src, flat=true,name,asrc, hideText=false, ...props }) {
 
     return (
         <div className={styles.post}{...props}>
-             <Profile className={cn(styles.profile)} name={name} src={asrc}  />
-             <TextMain padded>{children}</TextMain>
+             <Profile name={name} src={asrc}  />
+             <TextMain nonText={hideText}>{children}</TextMain>
              {flat && <Images className={cn(styles.img)} src={src}/>}
              <hr className={styles.hr}/>
              <ActionBox blue={true}/>

@@ -4,12 +4,11 @@
     width:100% ;
     height: auto;
     background-color: var(--c-primary);
-    border: 1px solid var(--c-border-color);
+    border-bottom: 1px;
+    border-style: solid;
+    border-color:  var(--c-border-color);
 }
-.profile{
-    position: absolute;
-    padding: 12px 9px 4px 15px;
-}
+
 .img{
     display: block;
     max-width: 100%;
@@ -18,15 +17,5 @@
 .hr{
     width: auto;
     margin: 0 15px 0;
-    border: solid .8px #e4e4e4;
-}
-.cont{
-    padding: 5px;
-}
-.action{
-    position: absolute;
-    padding: 7px 15px 8px 0 ;
-}
-.text{
-    padding-left: 15px;
+    border: .8px solid var(--c-border-color);
 }
