@@ -7,8 +7,8 @@
 .img{
     width:100%;
     height: auto;
-    max-width: 390px;
-    max-height: 390px;
+    max-width: 375px;
+    max-height: 375px;
     display: block;
     object-fit: cover;
 }
