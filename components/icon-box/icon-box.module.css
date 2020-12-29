@@ -13,3 +13,6 @@
     align-items: center;
     column-gap: 18px;
 }
+.text{
+    padding: 0;
+}

@@ -11,6 +11,7 @@ import {
     Wink60B,
     Winkact
 } from "../icons";
+import TextMain from "../text/text-main";
 
 function IconBox({ className,liked, ...props }) {
     const [like,setLike] = useState(false)
@@ -20,7 +21,7 @@ function IconBox({ className,liked, ...props }) {
 
 
     return (<div className={styles.icons} {...props}>
-            <p>{count}</p>
+            <TextMain className={styles.text}>{count}</TextMain>
             <div className={styles.button}>
                {!like ? <Unlikedİcon2X onClick={()=> {
                    setLike(!like);

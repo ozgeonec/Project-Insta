@@ -10,7 +10,10 @@ function ShowButton({ children, className, ...props }) {
 
     return (
         <button className={styles.button}{...props}>
-            <DownArrow/> Show More
+            <div className={styles.icon}>
+                <DownArrow/>
+            </div>
+          Show More
         </button>
     )
 }
