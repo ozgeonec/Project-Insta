@@ -1,12 +1,28 @@
 .story{
     display: flex;
-    background-color: var(--c-background-color);
+    background-color: transparent;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
+
+}
+.profile{
+    z-index:20;
 }
 .container{
-    width: 400px;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.img{
+    position: absolute;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
