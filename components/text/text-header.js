@@ -5,7 +5,7 @@ import cn from 'classnames'
 function TextHeader({ bold = false, children, className, ...props }) {
     return (
         <span
-            className={styles.header}
+            className={cn(styles.header, className)}
             {...props}
         >
       {children}

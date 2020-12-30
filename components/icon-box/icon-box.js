@@ -4,10 +4,9 @@ import styles from './icon-box.module.css'
 
 import {
     Fav60B,
-    Favact,
-    Messageİcon,
+    Favact, MessageIcon,
     Sendms,
-    Unlikedİcon2X,
+    UnlikedIcon2X,
     Wink60B,
     Winkact
 } from "../icons";
@@ -23,7 +22,7 @@ function IconBox({ className,liked, ...props }) {
     return (<div className={styles.icons} {...props}>
             <TextMain className={styles.text}>{count}</TextMain>
             <div className={styles.button}>
-               {!like ? <Unlikedİcon2X onClick={()=> {
+               {!like ? <UnlikedIcon2X onClick={()=> {
                    setLike(!like);
                    setCount(count + 1);
                    liked=true;
@@ -34,7 +33,7 @@ function IconBox({ className,liked, ...props }) {
                }}/> }
                {!wink ? <Wink60B onClick={()=>setWink(!wink)}/> : <Winkact onClick={()=>setWink(!wink)}/>}
                {!fav ? <Fav60B onClick={()=>setFav(!fav)}/> : <Favact onClick={()=>setFav(!fav)}/>}
-               <Messageİcon/>
+               <MessageIcon/>
             </div>
             </div>
     )
